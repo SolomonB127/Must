@@ -59,7 +59,7 @@ const Navbar = () => {
                             <a href="/app" aria-label="Navigate to App">소소담담 APP</a>
                         </li>
                         <li>
-                            <a href="/about" aria-label="Navigate to About">소개</a>
+                            <a href="#intro" aria-label="Navigate to About">소개</a>
                         </li>
                         <li>
                             <a href="/activities" aria-label="Navigate to Activities">활동</a>
@@ -124,14 +124,14 @@ const Navbar = () => {
                                 <a href="/app" onClick={toggleMenu}>소소담담 APP</a>
                             </li>
                             <li>
-                                <a href="/about" onClick={toggleMenu}>소개</a>
+                                <a href="#intro" onClick={toggleMenu}>소개</a>
                             </li>
                             <li>
                                 <a href="/activities" onClick={toggleMenu}>활동</a>
                             </li>
                             <li className="mobile-lang-selector">
                                 <a href="/sign-in?lang=ko">한국어 로그인</a>
-                                <a href="/sign-in?lang=en">English Login</a>
+                                <a href="/sign-in?lang=en">English</a>
                             </li>
                         </ul>
                     </nav>

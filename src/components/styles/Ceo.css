@@ -1,0 +1,36 @@
+.ceo-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ceo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.ceo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+.ceo-card img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+  /* Responsive tweaks */
+@media (max-width: 600px) {
+    .ceo-container {
+        flex-direction: column;
+    }
+}
