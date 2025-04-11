@@ -1,0 +1,81 @@
+.subintro {
+    padding: 20px;
+}
+
+
+.subintro-container {
+    max-width: 1200px;
+    margin: 0 auto;            
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    gap: 20px;
+}
+#subintro-heading {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+article{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.subintro-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+
+.subintro-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+
+.sig-div p{
+    font-weight: 700;
+    font-size: 24px;
+}
+.sig-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.interview-link p {
+    font-weight: 800;
+    font-size: 18px;
+}
+.interview-link {
+    margin-top: 20px;
+}
+
+.interview-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+    .subintro-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subintro-text {
+        text-align: center;
+    }
+    
+    .subintro-image {
+        justify-content: center;
+    }
+}
