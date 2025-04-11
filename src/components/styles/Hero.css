@@ -1,0 +1,105 @@
+.hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0 url("../../../public/Hero_img.png") center/cover no-repeat;
+    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h1,
+.hero-content h2,
+.hero-content p {
+    margin: 0.5em 0;
+}
+
+
+.hero-indicator-container {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    z-index: 4;
+}
+
+
+.indicator-btn {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+  /* Active indicator styling */
+.indicator-btn.active,
+.indicator-btn[aria-current="true"] {
+    background-color: #000;
+}
+
+  /* Responsive  for smaller screens */
+@media (max-width: 768px) {
+    .hero-container {
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .indicator-btn {
+        width: 10px;
+        height: 10px;
+    }
+
+    .hero-indicator-container {
+        bottom: 10px;
+        right: 10px;
+        padding: 3px 8px;
+    }
+}
